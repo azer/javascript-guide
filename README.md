@@ -105,8 +105,6 @@ function Qux(){
 
 Prefer giving cleaner code examples over writing correct JavaScript, as I do in this guide.
 
-Instead of:
-
 ```js
 foo = 123
 bar = 456
