@@ -1,5 +1,5 @@
 * [Write Functions As Much As Possible](#write-functions-as-much-as-possible)
-* [Compose Large Abstractions From Small Modules]()
+* [Compose Large Abstractions From Small Modules](#compose-large-abstractions-from-small-modules)
 * [CommonJS Everywhere](#commonjs-everywhere)
 * [Require & Export on Top](#require--export-on-top)
 * [Avoid `new`, `prototype` and `this`](#avoid-new-prototype-and-this)
