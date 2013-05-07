@@ -4,6 +4,7 @@
 * [Require & Export on Top](#require--export-on-top)
 * [Avoid `new`, `prototype` and `this`](#avoid-new-prototype-and-this)
 * [Prefer Embedding Over Inheritance](#prefer-embedding-over-inheritance)
+* [Write Code Examples in Simplified Syntax](#write-code-examples-in-simplified-syntax)
 
 ## Write Functions As Much As Possible.
 
@@ -99,3 +100,20 @@ function Qux(){
 }
 
 ```
+
+## Write Code Examples in Simplified Syntax
+
+Prefer giving cleaner code examples over writing correct JavaScript, as I do in this guide.
+
+Instead of:
+
+```js
+foo = 123
+bar = 456
+
+function qux(){
+  return foo + bar
+}
+```
+
+![](https://dl.dropboxusercontent.com/s/prfjx7c33zm8x9o/npmel_0.jpg)
