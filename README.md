@@ -1,7 +1,7 @@
 * [Write Functions As Much As Possible](#write-functions-as-much-as-possible)
 * [Compose Large Abstractions From Small Modules]()
 * [CommonJS Everywhere](#commonjs-everywhere)
-* [Require & Export on Top](#require-export-on-top)
+* [Require & Export on Top](#require--export-on-top)
 * [Avoid `new`, `prototype` and `this`](#avoid-new-prototype-and-this)
 * [Prefer Embedding Over Inheritance](#prefer-embedding-over-inheritance)
 
