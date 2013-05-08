@@ -25,8 +25,8 @@ function bar(){}
 
 * Create modules that does one thing. 
 * Create repositories for modules and publish/open source them on NPM and Github if possible.
+* Never couple your code with any dependency doing more than it should
 * Avoid frameworks
-* Never couple your code with any library doing more than it should
 
 ## Write Declarative Code
 
