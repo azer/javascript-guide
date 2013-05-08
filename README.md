@@ -103,7 +103,8 @@ function Qux(){
 
 ## Write Code Examples in Simplified Syntax
 
-Prefer giving cleaner code examples over writing correct JavaScript, as I do in this guide.
+* Assume that all variables are already declared.
+* Avoid semicolons
 
 ```js
 foo = 123
