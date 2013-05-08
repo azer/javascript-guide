@@ -9,7 +9,7 @@
 
 ## Code Functions As Much As Possible.
 
-And define them with `function` keyword, not `var`:
+Create functions that does only one thing. And define them with `function` keyword, not `var`:
 
 ```js
 foo()
@@ -18,6 +18,13 @@ bar()
 function foo(){}
 function bar(){}
 ```
+
+## Compose Large Abstractions From Small Modules
+
+* Create modules that does one thing. 
+* Create repositories for modules and publish/open source them on NPM and Github if possible.
+* Avoid frameworks
+* Never couple your code with any library doing more than it should
 
 ## Write Declarative Code
 
