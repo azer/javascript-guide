@@ -1,3 +1,5 @@
+This repository records how I code JavaScript.
+
 * [Code Functions As Much As Possible](#code-functions-as-much-as-possible)
 * [Compose Large Abstractions From Small Modules](#compose-large-abstractions-from-small-modules)
 * [Write Declarative Code](#write-declarative-code)
@@ -27,6 +29,8 @@ function bar(){}
 * Create repositories for modules and publish/open source them on NPM and Github if possible.
 * Never couple your code with any dependency doing more than it should
 * Avoid frameworks
+
+A good read about this topic: http://substack.net/many_things
 
 ## Write Declarative Code
 
