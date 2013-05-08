@@ -49,7 +49,6 @@ function qux(){}
 function corge(){}
 ```
 
-## Compose Large Abstractions From Small Modules
 ## Avoid `new`, `prototype` and `this`
 
 Functions returning objects are much simpler, more replaceable and reusable:
