@@ -8,7 +8,7 @@ This repository records how I code JavaScript.
 * [Modularize Required Data](#modularize-required-data)
 * [Avoid `new`, `prototype` and `this`](#avoid-new-prototype-and-this)
 * [Prefer Embedding Over Inheritance](#prefer-embedding-over-inheritance)
-* [Create Individual PubSub Objects Rather Than EventEmitter Objects](#pubsub)
+* [Create Individual PubSub Objects Rather Than EventEmitters](#pubsub)
 * [Write Code Examples in Simplified Syntax](#write-code-examples-in-simplified-syntax)
 
 ## Code Functions As Much As Possible.
