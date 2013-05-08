@@ -129,7 +129,7 @@ function Qux(){
 ```
 
 <a name="pubsub"></a>
-## Create Individual PubSub Objects Rather Than EventEmitter Objects
+## Create Individual PubSub Objects Rather Than EventEmitters
 
 PubSub objects are more minimalistic, flexible, replaceable, easy to read and document:
 
