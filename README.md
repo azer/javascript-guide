@@ -1,14 +1,15 @@
-* [Write Functions As Much As Possible](#write-functions-as-much-as-possible)
+* [Code Functions As Much As Possible](#code-functions-as-much-as-possible)
 * [Compose Large Abstractions From Small Modules](#compose-large-abstractions-from-small-modules)
+* [Write Declarative Code](#write-declarative-code)
 * [CommonJS Everywhere](#commonjs-everywhere)
 * [Require & Export on Top](#require--export-on-top)
 * [Avoid `new`, `prototype` and `this`](#avoid-new-prototype-and-this)
 * [Prefer Embedding Over Inheritance](#prefer-embedding-over-inheritance)
 * [Write Code Examples in Simplified Syntax](#write-code-examples-in-simplified-syntax)
 
-## Write Functions As Much As Possible.
+## Code Functions As Much As Possible.
 
-And define them with `function` keyword:
+And define them with `function` keyword, not `var`:
 
 ```js
 foo()
@@ -17,6 +18,10 @@ bar()
 function foo(){}
 function bar(){}
 ```
+
+## Write Declarative Code
+
+More info: https://github.com/azer/declarative-js
 
 ## CommonJS Everywhere
 
