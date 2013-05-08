@@ -128,7 +128,8 @@ function Qux(){
 
 ```
 
-## PubSub Over EventEmitter
+<a name="pubsub"></a>
+## Create Individual PubSub Objects Rather Than EventEmitter Objects
 
 PubSub objects are more minimalistic, flexible, replaceable, easy to read and document:
 
@@ -145,8 +146,8 @@ onStart.subscribe(function(){
 
 More info: github.com/azer/pubsub
 
-<a name="pubsub"></a>
-## Create Individual PubSub Objects Rather Than EventEmitter Objects
+
+## Write Code Examples in Simplified Syntax
 
 * Assume that all variables are already declared.
 * Avoid semicolons
