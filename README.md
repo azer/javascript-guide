@@ -30,11 +30,14 @@ function bar(){}
 
 ## Write Declarative Code
 
+Write code that looks clean and describes what it wants to do. 
+
 More info: https://github.com/azer/declarative-js
 
 ## CommonJS Everywhere
 
-Modularize your both backend and frontend code in CommonJS. Avoid other module systems like RequireJS.
+Modularize your both backend and frontend code in CommonJS. Use OneJS or Browserify. 
+Avoid other module systems like RequireJS.
 
 ## Require & Export on Top
 
