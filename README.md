@@ -40,8 +40,9 @@ More info: https://github.com/azer/declarative-js
 
 ## CommonJS Everywhere
 
-Modularize your both backend and frontend code in CommonJS. Use [OneJS](http://github.com/azer/onejs) or [Browserify](http://github.com/substack/node-browserify). 
-Avoid other module systems like RequireJS.
+* Modularize your both backend and frontend code in CommonJS.
+* Use [OneJS](http://github.com/azer/onejs) or [Browserify](http://github.com/substack/node-browserify). 
+* Avoid other module systems like RequireJS.
 
 ## Require & Export on Top
 
