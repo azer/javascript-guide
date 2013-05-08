@@ -139,13 +139,15 @@ pubsub = require('pubsub')
 onStart = pubsub()
 onEnd = pubsub()
 
-onStart.subscribe(function(){
+onStart.subscribe(function(m, s, g){
   console.log('start')
 })
+
+onStart.publish('hello', 'world')
+
 ```
 
-More info: github.com/azer/pubsub
-
+More info: http://github.com/azer/pubsub
 
 ## Write Code Examples in Simplified Syntax
 
