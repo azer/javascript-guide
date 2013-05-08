@@ -8,6 +8,7 @@ This repository records how I code JavaScript.
 * [Modularize Required Data](#modularize-required-data)
 * [Avoid `new`, `prototype` and `this`](#avoid-new-prototype-and-this)
 * [Prefer Embedding Over Inheritance](#prefer-embedding-over-inheritance)
+* [Create Individual PubSub Objects Rather Than EventEmitter Objects](#pubsub)
 * [Write Code Examples in Simplified Syntax](#write-code-examples-in-simplified-syntax)
 
 ## Code Functions As Much As Possible.
@@ -127,7 +128,25 @@ function Qux(){
 
 ```
 
-## Write Code Examples in Simplified Syntax
+## PubSub Over EventEmitter
+
+PubSub objects are more minimalistic, flexible, replaceable, easy to read and document:
+
+```js
+pubsub = require('pubsub')
+
+onStart = pubsub()
+onEnd = pubsub()
+
+onStart.subscribe(function(){
+  console.log('start')
+})
+```
+
+More info: github.com/azer/pubsub
+
+<a name="pubsub"></a>
+## Create Individual PubSub Objects Rather Than EventEmitter Objects
 
 * Assume that all variables are already declared.
 * Avoid semicolons
