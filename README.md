@@ -3,12 +3,12 @@ This repository records how I code JavaScript.
 * [Code Functions As Much As Possible](#code-functions-as-much-as-possible)
 * [Compose Large Abstractions From Small Modules](#compose-large-abstractions-from-small-modules)
 * [Write Declarative Code](#write-declarative-code)
-* [CommonJS Everywhere](#commonjs-everywhere)
+* [NPM Is Everywhere](#npm-everywhere)
 * [Require & Export on Top](#require--export-on-top)
 * [Modularize Required Data](#modularize-required-data)
 * [Avoid `new`, `prototype` and `this`](#avoid-new-prototype-and-this)
 * [Prefer Embedding Over Inheritance](#prefer-embedding-over-inheritance)
-* [Create Individual PubSub Objects Rather Than EventEmitters](#pubsub)
+* [Prefer PubSub Objects Rather Than EventEmitters](#pubsub)
 * [Write Code Examples in Simplified Syntax](#write-code-examples-in-simplified-syntax)
 
 ## Code Functions As Much As Possible.
@@ -39,10 +39,10 @@ Write code that looks clean and describes what it wants to do.
 
 More info: https://github.com/azer/declarative-js
 
-## CommonJS Everywhere
+## NPM Is Everywhere
 
 * Modularize your both backend and frontend code in CommonJS.
-* Use [OneJS](http://github.com/azer/onejs) or [Browserify](http://github.com/substack/node-browserify). 
+* Use [browserify](http://github.com/substack/node-browserify) or [OneJS](http://github.com/azer/onejs).
 * Avoid other module systems like RequireJS.
 
 ## Require & Export on Top
