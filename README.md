@@ -126,39 +126,6 @@ function Qux(){
 
 ```
 
-<a name="pubsub"></a>
-## Prefer PubSub Objects Rather Than EventEmitters
 
-PubSub objects are more minimalistic, flexible, replaceable, easy to read and document:
-
-```js
-pubsub = require('pubsub')
-
-onStart = pubsub()
-onEnd = pubsub()
-
-onStart.subscribe(function(m, s, g){
-  console.log('start')
-})
-
-onStart.publish('hello', 'world')
-
-```
-
-More info: http://github.com/azer/pubsub
-
-## Write Code Examples in Simplified Syntax
-
-* Assume that all variables are already declared.
-* Avoid semicolons
-
-```js
-foo = 123
-bar = 456
-
-function qux(){
-  return foo + bar
-}
-```
 
 ![](https://dl.dropboxusercontent.com/s/prfjx7c33zm8x9o/npmel_0.jpg)
