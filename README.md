@@ -58,7 +58,8 @@ function corge(){}
 
 ## Avoid `new`, `prototype` and `this`
 
-Functions returning objects are much simpler, more replaceable and reusable:
+Functions returning objects will let you avoid maintaining "this" arguments and also let you benefit from
+functional programming.
 
 ```js
 var smith = Child('Joe', 'Smith')
