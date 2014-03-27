@@ -5,7 +5,6 @@ This repository records how I code JavaScript.
 * [Write Declarative Code](#write-declarative-code)
 * [NPM Is Everywhere](#npm-everywhere)
 * [Require & Export on Top](#require--export-on-top)
-* [Modularize Required Data](#modularize-required-data)
 * [Avoid `new`, `prototype` and `this`](#avoid-new-prototype-and-this)
 * [Prefer Embedding Over Inheritance](#prefer-embedding-over-inheritance)
 
@@ -57,11 +56,6 @@ module.exports = {
 function qux(){}
 function corge(){}
 ```
-
-## Modularize Required Data
-
-Create modules for the data your program depends on. 
-Example: https://github.com/azer/indev/blob/master/lib/look-up.js
 
 ## Avoid `new`, `prototype` and `this`
 
