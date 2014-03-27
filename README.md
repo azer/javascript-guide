@@ -33,21 +33,21 @@ A good read about this topic: http://substack.net/many_things
 
 ## Write Declarative Code
 
-Write code that looks clean and describes what it wants to do. 
-
-More info: https://github.com/azer/declarative-js
+* Write less code
+* Write code that tells what it does briefly
+* Choose simple & short variable names
 
 ## NPM Is Everywhere
 
-* Modularize your both backend and frontend code in CommonJS.
-* Use [browserify](http://github.com/substack/node-browserify) or [OneJS](http://github.com/azer/onejs).
+* Modularize your JS in CommonJS.
+* Use [browserify](http://github.com/substack/node-browserify)
 * Avoid other module systems like RequireJS.
 
 ## Require & Export on Top
 
 ```js
-foo = require('foo')
-bar = require('./bar')
+var foo = require('foo')
+var bar = require('./bar')
 
 module.exports = {
   qux: qux,
@@ -68,7 +68,7 @@ Example: https://github.com/azer/indev/blob/master/lib/look-up.js
 Functions returning objects are much simpler, more replaceable and reusable:
 
 ```js
-smith = Child('Joe', 'Smith')
+var smith = Child('Joe', 'Smith')
 
 function Child(parent, name){
   return {
@@ -81,10 +81,10 @@ function Child(parent, name){
 And keep your code available for functional programming:
 
 ```js
-JoeChild = partial(Child, 'Joe')
+var JoeChild = partial(Child, 'Joe')
 
-smith = JoeChild('Smith')
-kat = JoeChild('Kat')
+var smith = JoeChild('Smith')
+var kat = JoeChild('Kat')
 
 smith.parent
 // => Joe
@@ -96,7 +96,7 @@ kat.parent
 ## Prefer Embedding Over Inheritance
 
 ```js
-qux = Qux()
+var qux = Qux()
 qux.foo
 // => true
 qux.bar
