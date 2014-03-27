@@ -4,7 +4,7 @@
 * [NPM Everywhere](#npm-everywhere)
 * [Require & Export on Top](#require--export-on-top)
 * [Avoid `new`, `prototype` and `this`](#avoid-new-prototype-and-this)
-* [While Loops are Simpler](#while-loops-are-faster-and-simpler)
+* [While Loops Are Faster and Simpler](#while-loops-are-faster-and-simpler)
 * [Declare Variables Outside of Statements](#declare-variables-outside-of-statements)
 
 ## Code Functions As Much As Possible.
