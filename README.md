@@ -1,12 +1,11 @@
-This repository records how I code JavaScript.
-
 * [Code Functions As Much As Possible](#code-functions-as-much-as-possible)
 * [Compose Large Abstractions From Small Modules](#compose-large-abstractions-from-small-modules)
 * [Write Declarative Code](#write-declarative-code)
-* [NPM Is Everywhere](#npm-everywhere)
+* [NPM Everywhere](#npm-everywhere)
 * [Require & Export on Top](#require--export-on-top)
 * [Avoid `new`, `prototype` and `this`](#avoid-new-prototype-and-this)
-* [Prefer Embedding Over Inheritance](#prefer-embedding-over-inheritance)
+* [While Loops are Simpler](#while-loops-are-faster-and-simpler)
+* [Declare Variables Outside of Statements](#declare-variables-outside-of-statements)
 
 ## Code Functions As Much As Possible.
 
@@ -87,39 +86,55 @@ kat.parent
 // => Joe
 ```
 
-## Prefer Embedding Over Inheritance
+## Declare Variables Outside of Statements
+
+Declaring variables inside of a statement will make your code work and look less consistent. For example, below code will fail when you run it:
 
 ```js
-var qux = Qux()
-qux.foo
-// => true
-qux.bar
-// => true
-qux.qux
-// => true
-
-function Foo(){
-  return {
-    foo: true
-  }  
-}
-
-function Bar(){
-  return {
-    bar: true
-  }
-}
-
-function Qux(){
-  return {
-    qux: true,
-    foo: Foo(),
-    bar: Bar()
-  }
-}
-
+foobar
 ```
 
+With the error of "ReferenceError: foobar is not defined". But following code will not fail;
 
+```js
+foobar
+
+if (false) {
+  var foobar
+}
+```
+
+For having better consistency, declare the variable on top of your statement;
+
+```js
+
+var foobar
+
+if (false) {
+  foobar = whatever
+}
+```
+
+## While Loops Are Faster And Simpler
+
+While loops are faster than for loops, and they're much simpler. Here is an example;
+
+```js
+var i = 10
+
+while (i--) {
+  console.log(i)
+}
+```
+
+This will output from 9 to 0. If you'd like the other way:
+
+```js
+var i = -1
+
+while (++i < 10) {
+  console.log(i)
+}
+```
 
 ![](https://dl.dropboxusercontent.com/s/prfjx7c33zm8x9o/npmel_0.jpg)
